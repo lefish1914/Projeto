@@ -25,7 +25,7 @@ export class UserController {
   }
 
   @Get(':id')
-  async show(@ParamId()id:number){
+  async show(@ParamId() id:number){
     console.log('HUAHAUHAUAH'+{id})
     return this.userService.show(id);
   }
